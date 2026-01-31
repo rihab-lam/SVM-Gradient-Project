@@ -31,7 +31,7 @@ The algorithm enforces the **Karush-Kuhn-Tucker (KKT)** conditions through a pro
 
 ## 📊 Performance Visualization
 
-(![Market Risk Analysis]) <img width="1187" height="622" alt="image" src="https://github.com/user-attachments/assets/17f91a27-68c6-45fd-9956-ae19e79b107f" />
+![Market Risk Analysis](https://github.com/user-attachments/assets/17f91a27-68c6-45fd-9956-ae19e79b107f)
 
 ### Results Interpretation
 The visualization demonstrates the effectiveness of the custom SVM solver in identifying **non-linear regime shifts** within the BTC-USD price action.
