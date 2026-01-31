@@ -48,7 +48,7 @@ The algorithm enforces the **Karush-Kuhn-Tucker (KKT)** conditions through a pro
 
 ## 📊 Performance Visualization
 
-![Market Risk Analysis](image_aedf55.png)
+(image_aedf55.png)
 
 ### 📈 Results Interpretation
 
