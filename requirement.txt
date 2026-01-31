@@ -1,0 +1,12 @@
+# Data Manipulation & Linear Algebra
+numpy>=1.24.0
+pandas>=2.0.0
+
+# Visualization
+matplotlib>=3.7.0
+
+# Financial Data Acquisition
+yfinance>=0.2.30
+
+# Environment
+jupyter>=1.0.0
