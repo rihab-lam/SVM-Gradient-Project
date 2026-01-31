@@ -60,7 +60,6 @@ The visualization demonstrates the effectiveness of the custom SVM solver in ide
 
 ---
 
----
 
 ## 📂 Project Architecture
 
