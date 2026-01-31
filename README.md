@@ -43,17 +43,6 @@ The algorithm enforces the **Karush-Kuhn-Tucker (KKT)** conditions through a pro
     * **Rolling Volatility:** 10-day standard deviation used as a proxy for market stress.
     * **Z-Scores:** Identification of price anomalies relative to the 20-day moving average.
 * **Dynamic Labeling:** Automated classification of market states based on the 80th percentile of historical volatility.
-
----
-
-## 📂 Project Architecture
-
-```text
-├── SVM-Gradient-Project.ipynb  # Main Jupyter Notebook with implementation
-├── requirements.txt            # Python dependencies (NumPy, Pandas, Matplotlib)
-├── LICENSE                     # MIT Open Source License
-└── README.md                   # Project Documentation
-
 ---
 
 ## 📊 Performance Visualization
@@ -70,3 +59,16 @@ The visualization demonstrates the effectiveness of the custom SVM solver in ide
 * **Model Sensitivity:** The clustering of alerts during the 2024–2026 price discovery phase indicates that the model is highly sensitive to **stochastic volatility** and **momentum exhaustion**, typical indicators of late-cycle market behavior.
 
 ---
+
+---
+
+## 📂 Project Architecture
+
+```text
+├── SVM-Gradient-Project.ipynb  # Main Jupyter Notebook with implementation
+├── requirements.txt            # Python dependencies (NumPy, Pandas, Matplotlib)
+├── LICENSE                     # MIT Open Source License
+└── README.md                   # Project Documentation
+
+---
+
