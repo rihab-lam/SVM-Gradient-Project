@@ -53,11 +53,20 @@ The algorithm enforces the **Karush-Kuhn-Tucker (KKT)** conditions through a pro
 ├── requirements.txt            # Python dependencies (NumPy, Pandas, Matplotlib)
 ├── LICENSE                     # MIT Open Source License
 └── README.md                   # Project Documentation
+
+---
+
+## 📊 Performance Visualization
+
+![Market Risk Analysis](image_aedf55.png)
+
 ### 📈 Results Interpretation
 
-The visualization demonstrates the effectiveness of the custom SVM solver in identifying regime shifts.
+The visualization demonstrates the effectiveness of the custom SVM solver in identifying **non-linear regime shifts** within the BTC-USD price action.
 
-* **Market Risk Alerts (Red Dots):** These represent data points classified as "High Risk" by the model. You can observe that the solver successfully flags periods of extreme vertical price movement and high-volatility "top" formations.
-* **Support Vector Analysis:** The model identified **946 Support Vectors**. In the context of the Dual Problem, these are the samples where $0 < \alpha_i \le C$. These specific points are the "hardest" to classify and essentially define the market's risk boundary.
-* **Decision Boundary:** By utilizing log-returns and rolling volatility, the SVM creates a multi-dimensional hyperplane that separates stable growth from systemic risk. When the current market state crosses this boundary, a red alert is triggered.
-* **Predictive Value:** The clustering of red alerts during the 2024–2026 price actions suggests the model is sensitive to the increased volatility typical of late-cycle Bitcoin price discovery.
+* **Market Risk Alerts (Red Dots):** These represent data points classified as the **Positive Class (+1)** by the model. The solver successfully flags periods of extreme **convexity** in price movement and **heteroskedastic** volatility "top" formations.
+* **Support Vector Analysis:** The model identified **946 Support Vectors**. In the context of the **Dual Lagrangian Formulation**, these are the critical samples where the **KKT (Karush-Kuhn-Tucker)** conditions yield $0 < \alpha_i \le C$. These points reside on the **margin boundaries** and define the geometry of the **optimal separating hyperplane**.
+* **Decision Boundary:** By mapping features like **Log-Returns** and **Rolling Realized Volatility** into a high-dimensional space, the SVM constructs a **decision surface** that separates "Stable" from "Risk" states. A risk alert is triggered when the **feature vector** crosses the threshold defined by the **signum** of the **primal weights ($w$)** and **bias ($b$)**.
+* **Model Sensitivity:** The clustering of alerts during the 2024–2026 price discovery phase indicates that the model is highly sensitive to **stochastic volatility** and **momentum exhaustion**, typical indicators of late-cycle market behavior.
+
+---
