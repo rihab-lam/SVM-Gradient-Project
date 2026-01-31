@@ -26,7 +26,8 @@ The algorithm enforces the **Karush-Kuhn-Tucker (KKT)** conditions through a pro
 
 ## 📊 Performance Visualization
 
-![Market Risk Analysis](image_aedf55.png)
+![Market Risk Analysis]<img width="1187" height="622" alt="image" src="https://github.com/user-attachments/assets/5e30e78e-aa51-4443-9b6d-63ad8e262f3d" />
+
 
 ### Interpretation of Results
 * **SVM Risk Alerts (Red Dots):** The model identifies specific price points where market features (volatility, z-scores) indicate elevated risk. These alerts cluster around high-volatility regimes and significant price drawdowns.
